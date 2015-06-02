@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica, san-serif;
+}
+
+p {
+	padding: 18px;
+}
+
+.page-container {
+	border: solid 1px rgb(0, 198, 214);
+	width: 98%;
+	margin: 1%;
+}
+
+.headerTab {
+	background: rgb(0, 198, 214);
+	color: white;
+	font-size: 24px;
+	font-weight: 200;
+	padding: 18px;
+	border: solid 1px rgb(0, 198, 214);
+}
+
+.headerTab.active {
+	background: rgb(0, 218, 236);
+}
+
+.content {
+
+	color: rgb(111, 109, 118);
+	font-weight: 200;
+	max-height: 0vh;
+	transition: max-height 1s ease-out;
+	overflow: hidden;
+}
+
+.content.active {
+	max-height: 50vh;
+	transition: max-height 1s ease-in;
+
+}
+
+
+
