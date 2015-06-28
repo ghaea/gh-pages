@@ -33,3 +33,30 @@ var translateCharacter = function(character) {
   return character;
 }
 
+var $inputMessage
+
+var translateMessage = function() {
+
+  $(".translate").on("click", function() {
+
+    $inputMessage = $(".monospace").val()
+
+    var characters = $inputMessage.split("")
+
+    var translate = _.map(characters, function(char) {
+
+      return translateCharacter(char)
+    })
+
+    translate.join("")
+
+    $(".monospace").append(translate)
+  })
+}
+
+
+$(document).on("ready", function() {
+
+    translateMessage()
+
+})

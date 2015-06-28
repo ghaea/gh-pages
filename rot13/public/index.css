@@ -10,10 +10,29 @@ textarea {
 
 section.input {
   margin-bottom: 20px;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.instructions {
+	font-size: 24px;
+	font-family: Helvetica;
+	margin-bottom: 10px;
 }
 
 .translate {
   display: block;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: white;
+  border: solid 1px black;
   
+}
+
+section.output {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 40px;
 }
 
